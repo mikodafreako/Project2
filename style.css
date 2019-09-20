@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Alef|Telex');
-body {background-color:#ece6fa;
-      background-image:url(https://i.pinimg.com/originals/df/a3/71/dfa3711819b12f0bab01c65d5971007e.jpg); 
+body {background-color:#ece6fa; 
+      background-image:url(https://i.pinimg.com/originals/df/a3/71/dfa3711819b12f0bab01c65d5971007e.jpg); /*anime BG*/
         background-repeat: no-repeat;
 		   background-size:cover;
 		   display:flex;
@@ -9,7 +8,7 @@ body {background-color:#ece6fa;
 			height: 100vh;
 			font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
 }
-.container{background-color:rgba(255,252,252,0.4);
+.container{background-color:rgba(255,252,252,0.4); /*Box is like a faded white*/
 			width:80%;
 			padding: 100px;
 }
@@ -30,7 +29,7 @@ p { margin: 5px; /*space between lines*/
 span { font-weight:bold;
 }
 
-.newDerections { border:5px solid #ad6d47;
+.newDerections { border:5px solid;
 				margin: 20px 0;
 }
 
@@ -40,7 +39,7 @@ span { font-weight:bold;
 { width: 70%;
 height: 2em;
 }
-/*forms will be not displayed till their turn will come*/
+/*forms will be not displayed until their turn comes*/
 
 .question2,
 .question3 { display:none;
