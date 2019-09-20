@@ -69,7 +69,7 @@ function getAnswer1()
 }  // end of getAnswer1 function
 
 
-
+/*
 function getAnswer2()
 {
 	event.preventDefault();
@@ -150,3 +150,4 @@ function startOver()
 	document.body.classList.remove("imgBlueberryIsland");
 	document.body.classList.remove("imgPlayground"); 
 }
+*/
