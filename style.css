@@ -29,9 +29,11 @@ p { margin: 5px; /*space between lines*/
 span { font-weight:bold;
 }
 
+/*
 .newDerections { border:5px solid;
 				margin: 20px 0;
 }
+*/
 
 .chosenAnswer1,
 .chosenAnswer2,
@@ -51,10 +53,10 @@ height: 2em;
 .btn { padding: 4px 20px;
 /*give the background a gradient*/
 background:#000000; /*fallback for browsers that don't support gradients*/
-background: -webkit-linear-gradient(top, #2489d6, #7ddeed);
-background: -moz-linear-gradient(top, #2489d6, #7ddeed);
-background: -o-linear-gradient(top, #2489d6, #7ddeed);
-background: linear-gradient(top, #2489d6, #7ddeed);
+background: -webkit-linear-gradient(top, #000000, #000000);
+background: -moz-linear-gradient(top, #000000, #000000);
+background: -o-linear-gradient(top, #000000, #000000);
+background: linear-gradient(top, #000000, #000000);
 border:2px solid #FFFFFF;
 /*style the text*/
 font-size:1.1em;
@@ -73,7 +75,7 @@ box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
 }
 /****NOW STYLE THE BUTTON'S HOVER STATE***/
 .btn:hover, btn:focus {
-border:2px solid #a7a5a4;
+border:2px solid #000000, #000000;
 }
 
 .imgPlayground { background-color: #;
