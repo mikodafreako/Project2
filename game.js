@@ -53,12 +53,13 @@ function getAnswer1()
 		"<p>\"Heyyy, are you alive?\", I ask. <br>  </p>";+
 		"<p>I'm pretty sure she didn't even notice I was there. <br>  </p>";+
 		"<p>(Guess she doesn't want to talk. I'll just look at the stars with her then.) <br>  </p>";+
-		"<p>I quietly sit cross-legged next to her we start to gaze at the scenergy together.<br>  </p>";+
+		"<p>I quietly sit cross-legged next to her we start to gaze at the scenery together.<br>  </p>";+
 		introduction.style.display ="none";
 		question1.style.display ="none";
 		question2.style.display ="block";
 		document.body.classList.add("imgPlayground"); //change the background of the body
 		break;
+			
 		default:
 		newDerections.innerHTML="Come on Michael, are they a <em>boy</em> or a <em>girl</em>?";
 		introduction.style.display ="none";
