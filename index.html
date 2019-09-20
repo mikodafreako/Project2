@@ -1,25 +1,48 @@
-<!DOCTYPE html>
-<html>
-
-<head
-      <link rel=stylesheet href="scripts/css.css" type="text/css"/>
-      <title>Project 2</title>
+<html lang="en">
+      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="ZORK">
+    <meta property="og:type" content="Web Based Game">
+    <meta property="og:description" content="An interpretation of ZORK by Dillon Lomnitzer.">
+    <meta property="og:url" content="https://dillonlomnitzer.com/zork">
+    <meta property="og:image" content="https://dillonlomnitzer.com/zork/zork.png">
+    <title>ZORK</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
+      
+<body>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/items.js"></script>
+    <script src="assets/js/rooms.js"></script>
+    <script src="assets/js/game.js"></script>
+    <div id="crt-screen" class="crt">
+        <div class="container">
+            <div class="scorebar">
+                    <div id="scorebar-inner">
+                    <div class="room">West of House</div>
+                    <div class="moves">Moves: <span id='move-int'>0</span></div>
+                    <div class="score">Score: <span id='score-int'>0</span></div>
+                    <div id="crt-toggle"><span id="led">&#9679;</span> <span id="crt-text"></span></div>
+                </div>
+            </div>
 
-<body style="background-color:black;text-align:center;font-size:30px;">
-
- <div id="console">
- 
-
-<h1 style="font-family:arial;color:white;font-size:40px;">Project 2</h1>
-
-<p id="start_message" style="font-family:arial;color:white;font-size:40px;">Welcome to the game.</p>
-  
-<p id="demo"></p>
-       
-</div>     
- 
-<script type="text/javascript" src="scripts/game.js"></script>
- 
+            <div class="screen">
+                <div id="screen-inner">
+                    <div id="content" class="content">
+                        <div id="content-inner">
+                            <span id="zork_title">ZORK</span><br /><br />
+                            Welcome to Project 2.<br />
+                            <div class="commandline">
+                                > <input type="text" id="user_in" autofocus data-lpignore="true"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
