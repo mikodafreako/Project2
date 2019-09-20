@@ -24,7 +24,7 @@ function getAnswer1()
 	{
 		case "boy": 
 		newDerections.innerHTML ="<p>(Oh, looks like he's a boy.)</p>"+ 
-		"<p>The boy was Asian, and had a generic asian face. He had black hair and looked like he was deep in thought.  <br>  </p>"+
+		"<p>The boy was Asian, and had a generic Asian face. He had black hair and looked like he was deep in thought.  <br>  </p>"+
 		"<p>He was wearing a black dress shirt, which complimented his black dress pants and dress shoes. He looked really chill and mature.  <br>  </p>"+
 		"<p>(Woah. Pretty emo, but he reminds of myself. I could probably be friends with this guy.) <br>  </p>"+
 		"<p>He was just standing there on the blue grass, and so I decided to ask for his name. <br>  </p>" +
