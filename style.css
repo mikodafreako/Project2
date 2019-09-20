@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Alef|Telex');
+body {background-color:#ece6fa;
+      background-image:url(https://loremflickr.com/2000/10
+        00/kids,bedroom/all); 
+        background-repeat: no-repeat;
+		   background-size:cover;
+		   display:flex;
+		   align-items:flex-start;
+		   justify-content: center;
+			height: 100vh;
+			font-family: 'Alef', sans-serif;	  
+}
+.container{ background-color:rgba(255,252,252,0.4);
+			width:60%;
+			padding: 15px;
+}
+h1 { text-align:center;
+	color: #811bb2;
+	font-weight:bold;
+}
+
+.introduction {	display:flex;
+				flex-flow: column wrap;
+				align-items: center; /*puts the cntainer in the middle of the page*/
+}
+
+p { margin: 5px; /*space between lines*/
+	font-size: 1.1em;
+}
+
+span { font-weight:bold;
+}
+
+.newDerections { border:2px solid #ad6d47;
+				margin: 20px 0;
+}
+.chosenAnswer1,
+.chosenAnswer2,
+.chosenAnswer3 { width: 70%;
+			height: 2em;
+}
+/*forms will be not displayed till their turn will come*/
+.question2,
+.question3 { display:none;
+}
+
+#btn { display:none; /*start over btn*/
+}
+
+.btn { padding: 4px 20px;
+/*give the background a gradient*/
+background:#2489d6; /*fallback for browsers that don't support gradients*/
+background: -webkit-linear-gradient(top, #2489d6, #7ddeed);
+background: -moz-linear-gradient(top, #2489d6, #7ddeed);
+background: -o-linear-gradient(top, #2489d6, #7ddeed);
+background: linear-gradient(top, #2489d6, #7ddeed);
+border:2px solid #52f952;
+/*style the text*/
+font-size:1.1em;
+letter-spacing:0.05em;
+text-transform:uppercase;
+color:#fff;
+text-shadow: 0px 1px 10px #000;
+/*add to small curve to the corners of the button*/
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+/*give the button a drop shadow*/
+-webkit-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+-moz-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+}
+/****NOW STYLE THE BUTTON'S HOVER STATE***/
+.btn:hover, btn:focus {
+border:2px solid #a7a5a4;
+}
+
+.imgPlayground { background-color: #b1fab7;
+				background-image:url(https://loremflickr.com/2000/1000/playground);
+}
+.imgBlueberryIsland { background-color: #deacfd;
+					background-image:url(https://loremflickr.com/2000/1000/island);
+}
