@@ -1,11 +1,11 @@
 // JavaScript Document
 
 var newDerections = document.getElementById("newDerections"); // div of directions for the user
-var introduction= document.getElementById("introduction"); //intro text that will not be displayed after users first answer
+var introduction= document.getElementById("introduction"); //intro, text that will not be displayed after users firsl answer
 var question1 = document.getElementById("question1");
 var question2 = document.getElementById("question2");
 var question3 = document.getElementById("question3");
-var btn =document.getElementById("btn"); //button to start over the game
+var btn =document.getElementById("btn"); //btn start over
 
 /*event listeners*/
 question1.addEventListener ("submit", getAnswer1); // takes the form (id="question1") and on submit executes the function getAnswer1
@@ -16,14 +16,14 @@ document.getElementById("btn").addEventListener("click" ,startOver);
 /*functions*/
 function getAnswer1()
 {
-	event.preventDefault();
+	event.preventDefault(); // to prevent the submition of the form
 	var chosenAnswer1 = document.forms["question1"] ["chosenAnswer1"].value.toLowerCase();
 	console.log (chosenAnswer1);
 	
 	switch (chosenAnswer1)
 	{
 		case "boy": 
-		newDerections.innerHTML ="<p>(Oh, looks like he's a boy.) <br>  </p>"; +
+		newDerections.innerHTML ="<p>(Oh, looks like he's a boy.)</p>"+ 
 		"<p>The boy was Asian, and had a generic asian face. He had black hair and looked like he was deep in thought.  <br>  </p>";+
 		"<p>He was wearing a black dress shirt, which complimented his black dress pants and dress shoes. He looked really chill and mature.  <br>  </p>";+
 		"<p>(Woah. Pretty emo, but he reminds of myself. I could probably be friends with this guy.) <br>  </p>";+
@@ -41,7 +41,10 @@ function getAnswer1()
 		break;
 			
 		case "girl":
-		newDerections.innerHTML = "<p>(Oh, looks like she's a girl.) <br>  </p>"; +
+		newDerections.innerHTML ="<p>(Oh, looks like she's a girl.)</p>"+
+		"<p> On their way, they see a playground. Tammy wants to go there. </p>"+ 
+		"<p> If they stop to play, they will miss the boat.</p>"+
+		"<p> What should they do? <em>go play</em> or <em> run to the boat </em>?</p>";
 		"<p>The girl was Asian, and her face was kind of alluring to me. Her long black hair was flowing along with the wind.<br>  </p>";+
 		"<p>She was wearing a white dress, which complimented her white heels. She looked really elegant and civilized. <br>  </p>";+
 		"<p>(She looks really pretty, but I'm not sure how to approach her.) <br>  </p>";+
@@ -53,7 +56,7 @@ function getAnswer1()
 		"<p>\"Heyyy, are you alive?\", I ask. <br>  </p>";+
 		"<p>I'm pretty sure she didn't even notice I was there. <br>  </p>";+
 		"<p>(Guess she doesn't want to talk. I'll just look at the stars with her then.) <br>  </p>";+
-		"<p>I quietly sit cross-legged next to her we start to gaze at the scenery together.<br>  </p>";+
+		"<p>I quietly sit cross-legged next to her we start to gaze at the scenery together.<br>  </p>";
 		introduction.style.display ="none";
 		question1.style.display ="none";
 		question2.style.display ="block";
@@ -61,14 +64,14 @@ function getAnswer1()
 		break;
 			
 		default:
-		newDerections.innerHTML="Come on Michael, are they a <em>boy</em> or a <em>girl</em>?";
+		newDerections.innerHTML="I don\'t understand, are they a <em>boy</em> or a <em>girl</em>?";
 		introduction.style.display ="none";
 		question1.reset(); 
 		
 	}//end of switch statement
 }  // end of getAnswer1 function
 
-/*
+
 function getAnswer2()
 {
 	event.preventDefault();
@@ -149,4 +152,3 @@ function startOver()
 	document.body.classList.remove("imgBlueberryIsland");
 	document.body.classList.remove("imgPlayground"); 
 }
-*/
