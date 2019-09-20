@@ -11,7 +11,7 @@ body {background-color:#ece6fa;
 }
 .container{background-color:rgba(255,252,252,0.4);
 			width:60%;
-			padding: 15px;
+			padding: 50px;
 }
 h1 { text-align:center;
 	color: #811bb2;
@@ -20,7 +20,7 @@ h1 { text-align:center;
 
 .introduction {	display:flex;
 				flex-flow: column wrap;
-				align-items: left; /*puts the container on the left of the page*/
+				align-items: center; /*puts the container on the left of the page*/
 }
 
 p { margin: 5px; /*space between lines*/
@@ -30,7 +30,7 @@ p { margin: 5px; /*space between lines*/
 span { font-weight:bold;
 }
 
-.newDerections { border:2px solid #ad6d47;
+.newDerections { border:10px solid #ad6d47;
 				margin: 20px 0;
 }
 
@@ -49,7 +49,7 @@ height: 2em;
 #btn { display:none; /*start over btn*/
 }
 
-.btn { padding: 4px 20px;
+.btn { padding: 100px 200px;
 /*give the background a gradient*/
 background:#2489d6; /*fallback for browsers that don't support gradients*/
 background: -webkit-linear-gradient(top, #2489d6, #7ddeed);
