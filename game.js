@@ -1,13 +1,11 @@
 // JavaScript Document
 
 var newDerections = document.getElementById("newDerections"); // div of directions for the user
-var introduction= document.getElementById("introduction"); //intro, text that will not be displayed after users firsl answer
+var introduction= document.getElementById("introduction"); //intro text that will not be displayed after users first answer
 var question1 = document.getElementById("question1");
 var question2 = document.getElementById("question2");
 var question3 = document.getElementById("question3");
-var btn =document.getElementById("btn"); //btn start over
-
- 
+var btn =document.getElementById("btn"); //button to start over the game
 
 /*event listeners*/
 question1.addEventListener ("submit", getAnswer1); // takes the form (id="question1") and on submit executes the function getAnswer1
@@ -18,38 +16,33 @@ document.getElementById("btn").addEventListener("click" ,startOver);
 /*functions*/
 function getAnswer1()
 {
-	event.preventDefault(); // to prevent the submition of the form
+	event.preventDefault();
 	var chosenAnswer1 = document.forms["question1"] ["chosenAnswer1"].value.toLowerCase();
 	console.log (chosenAnswer1);
 	
-	
 	switch (chosenAnswer1)
 	{
-		case "stay home": 
-		newDerections.innerHTML ="<p>Tammy Says: Please Tommy,  I'm bored let's go</p>"+ 
-		"<p><span>Tommy</span> can:<em>stay home</em> or <em>go for adventure</em></p>";
+		case "good game": 
+		newDerections.innerHTML ="<p>Thanks!</p>";
 		introduction.style.display ="none";
 		question1.reset(); // resets the form, so the chosen answer of the user will not appear in the input box
 		break;
-		case "go for adventure":
-		newDerections.innerHTML ="<p>Tommy and Tammy are running to a boat that will take them to the Blueberry Island.</p>"+
-		"<p> On their way, they see a playground. Tammy wants to go there. </p>"+ 
-		"<p> If they stop to play, they will miss the boat.</p>"+
-		"<p> What should they do? <em>go play</em> or <em> run to the boat </em>?</p>";
+		case "bad game":
+		newDerections.innerHTML ="<p>Oof!</p>";
 		introduction.style.display ="none";
 		question1.style.display ="none";
 		question2.style.display ="block";
 		document.body.classList.add("imgPlayground"); //change the background of the body
 		break;
 		default:
-		newDerections.innerHTML="I don\'t understand, shell we <em>go for adventure</em> or <em>stay home</em>?";
+		newDerections.innerHTML="I don\'t understand, is it a <em>good game</em> or a <em>bad game</em>?";
 		introduction.style.display ="none";
 		question1.reset(); 
 		
 	}//end of switch statement
 }  // end of getAnswer1 function
 
-
+/*
 function getAnswer2()
 {
 	event.preventDefault();
@@ -130,3 +123,4 @@ function startOver()
 	document.body.classList.remove("imgBlueberryIsland");
 	document.body.classList.remove("imgPlayground"); 
 }
+*/
