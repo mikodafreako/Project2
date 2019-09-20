@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Alef|Telex');
 body {background-color:#ece6fa;
-      background-image:url(https://loremflickr.com/2000/10
-        00/kids,bedroom/all); 
+      background-image:url(https://i.pinimg.com/originals/df/a3/71/dfa3711819b12f0bab01c65d5971007e.jpg); 
         background-repeat: no-repeat;
 		   background-size:cover;
 		   display:flex;
@@ -76,8 +75,8 @@ border:2px solid #a7a5a4;
 }
 
 .imgPlayground { background-color: #b1fab7;
-				background-image:url(https://loremflickr.com/2000/1000/playground);
+				background-image:url(https://i.pinimg.com/originals/df/a3/71/dfa3711819b12f0bab01c65d5971007e.jpg);
 }
 .imgBlueberryIsland { background-color: #deacfd;
-					background-image:url(https://loremflickr.com/2000/1000/island);
+					background-image:url(https://i.pinimg.com/originals/df/a3/71/dfa3711819b12f0bab01c65d5971007e.jpg;
 }
